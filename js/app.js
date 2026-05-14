@@ -1,0 +1,1 @@
+alert("Milo inventory system started");
