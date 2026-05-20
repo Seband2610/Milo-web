@@ -73,9 +73,6 @@ function buscarProducto() {
   if (!encontrado) {
     console.log("Producto no encontrado.");
   }
-<<<<<<< HEAD
-}
-=======
 }
 
 let btnAgregar = document.getElementById("Agregar");
@@ -87,4 +84,3 @@ btnBuscar.addEventListener("click", buscarProducto);
 let btnMostrar = document.getElementById("Mostrar");
 btnMostrar.addEventListener("click", mostrarInventario);
 
->>>>>>> 5061c6b (Milo actualizado)
