@@ -1,6 +1,7 @@
 // alert("Inventario Milo ha iniciado");
 
 let inventario = [];
+let listaProductos= document.getElementById("listaProductos");
 
 // Productos iniciales
 let producto1 = {
@@ -36,9 +37,9 @@ mostrarInventario();
 
 // Agregar producto
 function agregarProducto() {
-  let nombre = prompt("Ingrese el nombre del producto:");
-  let precio = parseFloat(prompt("Ingrese el precio del producto:"));
-  let cantidad = parseInt(prompt("Ingrese la cantidad del producto:"));
+  let nombre = document.getElementById("nombre").value;
+  let precio = parseFloat(document.getElementById("precio").value);
+  let cantidad = parseInt(document.getElementById("cantidad").value);
 
   let nuevoProducto = {
     nombre: nombre,
@@ -72,4 +73,18 @@ function buscarProducto() {
   if (!encontrado) {
     console.log("Producto no encontrado.");
   }
+<<<<<<< HEAD
 }
+=======
+}
+
+let btnAgregar = document.getElementById("Agregar");
+btnAgregar.addEventListener("click", agregarProducto);
+
+let btnBuscar = document.getElementById("Buscar");
+btnBuscar.addEventListener("click", buscarProducto);
+
+let btnMostrar = document.getElementById("Mostrar");
+btnMostrar.addEventListener("click", mostrarInventario);
+
+>>>>>>> 5061c6b (Milo actualizado)
